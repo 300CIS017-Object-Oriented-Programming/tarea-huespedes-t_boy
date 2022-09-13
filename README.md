@@ -23,7 +23,10 @@ Se esperan las siguientes funcionalidades para el prototipo
 > Actividad en parejas
 ### Diseño
 * Elabore el diagrama UML que represente los aspectos más importantes que requiere este enunciado para dar respuesta el ejercicio
-* Complete el .README con el link al diagrama de clases y la imagen del diagrama de clases resultante. 
+* Complete el .README con el link al diagrama de clases y la imagen del diagrama de clases resultante.
+### Diagrama UML
+![img.png](img.png)
+https://app.diagrams.net
 
 ### Investigación
   * Investigue qué son las Actions en Github,  vaya a "Github actions", agregue un nuevo workflow que permita compilar su proyecto basado en Cmake. Configure la acción para que se ejecute cada ves que se hace push en la rama principal de su proyecto (main).
