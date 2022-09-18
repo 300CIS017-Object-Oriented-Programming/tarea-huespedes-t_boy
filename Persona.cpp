@@ -11,6 +11,9 @@ void Persona::mostrarPersona()
     cout << "El puntaje de la persona es:  " << puntaje << "\n";
 }
 
+
+//Gets de clase Persona
+
 int Persona::getIdentificacion()
 {
     return identificacion;
@@ -39,23 +42,31 @@ int Persona::getPuntaje()
 
 //Sets de clase Persona
 
-int Persona::setIdentificacion( int id)
+int Persona::setIdentificacion()
 {
+    cout<<"Por favor ingresa tu número de Identificación"<<endl;
+    cin>>identificacion;
     Persona::identificacion =id;
 }
 
 string Persona::setNombre( string nombre)
 {
-    Persona::nombre =nombre;
+    cout<<"Por favor ingresa tu nombre"<<endl;
+    cin>>nombre;
+    Persona::nombre = nombre;
 }
 
 string Persona::setSexo( string sexo)
 {
+    cout<<"Por favor ingresa tu sexo(género)"<<endl;
+    cin>>sexo;
     Persona::sexo =sexo;
 }
 
 string Persona::setFechaDeNacimiento(string fechaDeNacimiento)
 {
+    cout<<"Por favor ingresa tu fecha de nacimiento"<<endl;
+    cin>>fechaDeNacimiento;
     Persona::fechaDeNacimiento =fechaDeNacimiento;
 }
 

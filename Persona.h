@@ -7,6 +7,7 @@ using std::string;
 using std::endl;
 
 class Persona{
+
 private:
     int identificacion;
     string nombre;
@@ -16,7 +17,6 @@ private:
 
 public:
 
-
     //Gets de atributos clase Persona
     int getIdentificacion();
     string getNombre();
@@ -25,17 +25,16 @@ public:
     int getPuntaje();
 
     //Sets de atributos clase Persona
-    int setIdentificacion( int id);
-    string setNombre( string nombre);
-    string setSexo( string sexo);
-    string setFechaDeNacimiento( string fechaDeNacimiento);
-    int setPuntaje( int puntaje);
+    int setIdentificacion();
+    string setNombre();
+    string setSexo();
+    string setFechaDeNacimiento();
+    int setPuntaje(int puntaje);
 
     //Método para mostrar datos de personas
     void mostrarPersona();
 
 };
-
 
 
 #endif //TAREA_HUESPEDES_T_BOY_PERSONA_H
