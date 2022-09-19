@@ -25,11 +25,11 @@ public:
     int getPuntaje();
 
     //Sets de atributos clase Persona
-    int setIdentificacion();
-    string setNombre();
-    string setSexo();
-    string setFechaDeNacimiento();
-    int setPuntaje(int puntaje);
+    void setIdentificacion(int identificacion);
+    void setNombre(string nombre1);
+    void setSexo(string genero);
+    void setFechaDeNacimiento(string fechaNacimiento1);
+    void setPuntaje(int puntaje);
 
     //Método para mostrar datos de personas
     void mostrarPersona();

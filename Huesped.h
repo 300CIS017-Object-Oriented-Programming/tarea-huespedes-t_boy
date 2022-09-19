@@ -25,8 +25,8 @@ public:
     string getCiudadFamiliar();
 
     //Sets de la clase Huesped
-    string setInformacionFamiliarClinica();
-    string setCiudadFamiliar();
+    void setInformacionFamiliarClinica(string clinica1);
+    void setCiudadFamiliar(string ciudad1);
     void mostrarHuesped();
 
 };

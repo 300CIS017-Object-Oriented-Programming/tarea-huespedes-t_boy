@@ -32,24 +32,18 @@ string Hogar::getDescripcion() {
 
 //Sets de la clase Hogar
 
-string Hogar::setDireccion() {
-    cout<<"Por favor ingresa la direccion del hogar: "
-    cin>>direccion;
-    Hogar::direccion = direccion;
+void Hogar::setDireccion(string direccion1) {
+    Hogar::direccion = direccion1;
 }
 
-int Hogar::setNumeroDeCamasDisponibles() {
-    cout<<"Por favor ingresa el numero de camas disponibles: "
-    cin>>camasDisponibles;
-    Hogar::numeroDeCamasDisponibles = camasDisponibles;
+void Hogar::setNumeroDeCamasDisponibles(int disponibles) {
+    Hogar::numeroDeCamasDisponibles = disponibles;
 }
 
-bool Hogar::setPuedeTenerBebes(bool bol) {
+void Hogar::setPuedeTenerBebes(bool bol) {
     Hogar::puedeTenerBebes = bol;
 }
 
-string Hogar::setDescripcion() {
-    cout<<"Por favor ingresa la descripcion del hogar: "
-    cin>>descripcion1;
+void Hogar::setDescripcion(string descripcion1) {
     Hogar::descripcion = descripcion1;
 }

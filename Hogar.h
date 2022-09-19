@@ -22,10 +22,10 @@ public:
     string getDescripcion();
 
     //Sets de la clase Hogar
-    string setDireccion();
-    int setNumeroDeCamasDisponibles();
-    bool setPuedeTenerBebes(bool bol);
-    string setDescripcion();
+    void setDireccion( string direccion1);
+    void setNumeroDeCamasDisponibles( int disponibles);
+    void setPuedeTenerBebes(bool bol);
+    void setDescripcion(string descripcion1);
     void mostrarHogar();
 
 };

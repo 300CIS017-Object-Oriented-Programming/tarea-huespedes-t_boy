@@ -42,35 +42,27 @@ int Persona::getPuntaje()
 
 //Sets de clase Persona
 
-int Persona::setIdentificacion()
+void Persona::setIdentificacion(int identificacion)
 {
-    cout<<"Por favor ingresa tu número de Identificación"<<endl;
-    cin>>identificacion;
-    Persona::identificacion =id;
+    Persona::identificacion =identificacion;
 }
 
-string Persona::setNombre( string nombre)
+void Persona::setNombre( string nombre1)
 {
-    cout<<"Por favor ingresa tu nombre"<<endl;
-    cin>>nombre;
-    Persona::nombre = nombre;
+    Persona::nombre = nombre1;
 }
 
-string Persona::setSexo( string sexo)
+void Persona::setSexo( string genero)
 {
-    cout<<"Por favor ingresa tu sexo(género)"<<endl;
-    cin>>sexo;
-    Persona::sexo =sexo;
+    Persona::sexo =genero;
 }
 
-string Persona::setFechaDeNacimiento(string fechaDeNacimiento)
+void Persona::setFechaDeNacimiento(string fechaDeNacimiento1)
 {
-    cout<<"Por favor ingresa tu fecha de nacimiento"<<endl;
-    cin>>fechaDeNacimiento;
-    Persona::fechaDeNacimiento =fechaDeNacimiento;
+    Persona::fechaDeNacimiento =fechaDeNacimiento1;
 }
 
-int Persona::setPuntaje(int puntaje)
+void Persona::setPuntaje(int puntaje)
 {
     Persona::puntaje =puntaje;
 }

@@ -26,14 +26,10 @@ string Huesped::getCiudadFamiliar(){
 
 //Sets de la clase Huesped
 
-string Huesped::setInformacionFamiliarCliniCa(){
-    cout<<"Por favor ingresa informacion sobre la clinica en la que esta tu familiar: "<<endl;
-    cin>>clinica;
-    Huesped::informacionFamiliarClinica = clinica;
+void Huesped::setInformacionFamiliarCliniCa(string clinica1){
+    Huesped::informacionFamiliarClinica = clinica1;
 }
 
-string Huesped::getCiudadFamiliar(){
-    cout<<"Por favor ingresa informacion sobre la ciudad de origen del familiar: "<<endl;
-    cin>>ciudad;
-    Huesped::ciudadFamiliar = ciudad;
+void Huesped::getCiudadFamiliar(string ciudad1){
+    Huesped::ciudadFamiliar = ciudad1;
 }

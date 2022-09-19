@@ -17,18 +17,13 @@ private:
 public:
 
     //Gets de la clase Propietario
-    bool getPropietario();
+    bool getDisponibilidad();
     Hogar *getHogar() const;
 
     //Sets de la clase Propietario
-    bool setPropietario();
-    void setPropietario();
+    bool setDisponibilidad( bool disponibilidad);
+    void setHogar(Hogar *hogar);
     void mostrarPropietario();
-
-
-
-
-
 };
 
 

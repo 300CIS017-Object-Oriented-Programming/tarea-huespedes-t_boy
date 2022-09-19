@@ -6,9 +6,13 @@ void Reserva::mostrarReserva()
     cout << "**********************";
     cout << "La fecha de inicio de la reserva es: " << fechaDeInicio << "\n";
     cout << "La fecha de fin de la reserva es  " << fechaDeFin << "\n";
-    cout << "El sexo de la Persona es:  " << sexo << "\n";
-    cout << "La fecha de nacimiento de la persona es:  " << fechaDeNacimiento << "\n";
     cout << "El id de la reserva es  " << id << "\n";
+    if(getpropietario()!=NULL){
+        cout<<"Detalles del Propietario"<<endl;
+        Propietario->mostrarPropietario();
+        cout<<"Detalles del Huesped"<<endl;
+        Huesped->mostrarHuesped();
+    }
 }
 
 //Gets de clase Reserva
@@ -21,15 +25,11 @@ string Reserva::getFechaDeFin() {
     return fechaDeFin;
 }
 
-Propietario *Propietario::getPropietario() const {
+Propietario *Reserva::getPropietario() const {
     return propietario;
 }
 
-Huesped * huesped::getHuesped() const {
-    return huesped;
-}
-
-Huesped *huesped::getPropiedad() const {
+Huesped *Reserva::getHuesped() const {
     return huesped;
 }
 
@@ -39,32 +39,24 @@ int  Reserva::getId() {
 
 //Sets de clase Reserva
 
-string Reserva::setFechaDeInicio() {
-    cout<<"Por favor ingresa la fecha de inicio de tu reserva"<<endl;
-    cin>>fechaDeInicio;
-    Reserva::fechaDeInicio = fechaDeInicio;
+void Reserva::setFechaDeInicio(string inicio) {
+    Reserva::fechaDeInicio = inicio;
 }
 
-string Reserva::setFechaDeFin() {
-    cout<<"Por favor ingresa la fecha de fin de tu reserva"<<endl;
-    cin>>fechaDeFin;
-    Reserva::fechaDeFin = fechaDeFin;
+void Reserva::setFechaDeFin(string fin) {
+    Reserva::fechaDeFin = fin;
 }
 
-/*
-void Propietario::setPropietario() const {
-    return propietario;
+void Reserva::setPropietario(Propietario *propietario1){
+    Reserva::propietario = propietario1;
 }
 
-Huesped *huesped::setPropiedad() const {
-    return huesped;
+void Reserva::setHuesped(Huesped *huesped1){
+    Reserva::huesped = huesped1;
 }
-*/
 
-int  Reserva::setId() {
-    cout<<"Por favor ingresa el id de la reserva: "<<endl;
-    cin>>id;
-    Reserva::id == id;
+void Reserva::setId(int id) {
+    Reserva::id = id;
 }
 
 
