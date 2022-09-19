@@ -1,12 +1,11 @@
-//
-// Created by LENOVO I7 on 15/9/2022.
-//
 #include "Huesped.h"
 
+/*
 Huesped :: Huesped {
     informacionFamiliarClinica = " ";
     strind ciudadFamiliar="";
 };
+ */
 
 Huesped :: Huesped(string informacionFamiliarClinica, string ciudadFamiliar): informacionFamiliarClinica(informacionFamiliarClinica), ciudadFamiliar(ciudadFamiliar){}
 
@@ -15,10 +14,26 @@ void Huesped :: mostrarHuesped(){
     cout << "El familiar es de laciudad de " << ciudadFamiliar << "\n";
 };
 
-const string &Huesped::getInformacionFamiliarCliniCa() const {
+//Gets de clase Huesped
+
+string Huesped::getInformacionFamiliarCliniCa(){
     return informacionFamiliarClinica;
 }
 
-void CuartoUtil::setInformacionFamiliarClinica(const string &informacionFamiliarClinic) {
-    Huesped::informacionFamiliarClinic = informacionFamiliarClinic;
+string Huesped::getCiudadFamiliar(){
+    return ciudadFamiliar;
+}
+
+//Sets de la clase Huesped
+
+string Huesped::setInformacionFamiliarCliniCa(){
+    cout<<"Por favor ingresa informacion sobre la clinica en la que esta tu familiar: "<<endl;
+    cin>>clinica;
+    Huesped::informacionFamiliarClinica = clinica;
+}
+
+string Huesped::getCiudadFamiliar(){
+    cout<<"Por favor ingresa informacion sobre la ciudad de origen del familiar: "<<endl;
+    cin>>ciudad;
+    Huesped::ciudadFamiliar = ciudad;
 }
