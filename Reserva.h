@@ -28,8 +28,8 @@ public:
     //Sets de los atributos de la clase reserva
     string setFechaDeInicio();
     string setFechaDeFin();
-    //void setpropietario( Propietario * propietario ) const;
-    // void sethuesped( Huesped * huesped ) const;
+    //void setPropietario() const;
+    //void setHuesped() const;
     int setId();
     void mostrarReserva();
 };
