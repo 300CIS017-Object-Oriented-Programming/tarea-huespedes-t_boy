@@ -22,7 +22,9 @@ private:
     void inicializarDatos();
 
 public:
-    Sistema();
+    Sistema(); //Constructor
+    //virtual ~Sistema(); //Destructor
+
     void agregarInformacionPropietario();
     void crearReservas();
     void liberarReservas();

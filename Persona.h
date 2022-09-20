@@ -12,7 +12,7 @@ private:
     int identificacion;
     string nombre;
     string sexo;
-    sring fechaDeNacimiento;
+    string fechaDeNacimiento;
     int puntaje;
 
 public:
