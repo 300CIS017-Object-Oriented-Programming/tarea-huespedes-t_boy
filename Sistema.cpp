@@ -89,4 +89,31 @@ void Sistema::agregarEvaluaciones() {
     Evaluacion[contEval] = new Evaluacion;
     contEval += 1;
 }
+void Sistema::calcularPuntaje() {
+    int puntaje;
+}
+
+void Sistema::agregarInformacionPropietario() {
+    int identificacion;
+    string nombre;
+    string sexo;
+    string fechaDeNacimiento;
+
+    cout << "Ingrese su Id: ";
+    cin >> identificacion;
+    cout << "Ingrese su nombre: ";
+    cin >> nombre;
+    cout << "Ingrese su sexo Masculino o Femenino: ";
+    cin >> sexo;
+    cout << "Ingrese su fecha de Nacimiento: ";
+    cin >> fechaDeNacimiento;
+
+    *new Propietario = new Propietario();
+    *new Propietario->getIdentificacion(identificacion);
+    *new Propietario->getNombre(nombre);
+    *new Propietario->getSexo(sexo);
+    *new Propietario->getFechaDeNacimiento(fechaDeNacimiento);
+
+    Propietario[identificacion] = new Propietario;
+}
 
