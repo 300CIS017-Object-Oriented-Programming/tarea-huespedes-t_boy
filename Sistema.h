@@ -7,10 +7,14 @@
 #include <Huesped.h>
 #include <Hogar.h>
 #include <Evaluacion.h>
+#include <vector>
+#include <stdlib.h>
 
 
 using std::string;
 using std::endl;
+using std::cin;
+using std::vector;
 
 class Sistema{
 private:
